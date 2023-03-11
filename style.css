@@ -147,3 +147,23 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Start of media query for responsiveness */
+@media screen and (min-width: 540px) {
+  /* Your CSS rules for screens larger than 385px */
+  .container {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    gap: 30px;
+  }
+
+  .score-card {
+    border-radius: 20px;
+    width: 50%;
+  }
+
+  .summary-card {
+    width: 50%;
+  }
+}
