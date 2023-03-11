@@ -4,7 +4,7 @@
   /* Color */
   --light-red: hsl(0, 100%, 67%);
   --orangey-yellow: hsl(39, 100%, 56%);
-  -green-teal: hsl(166, 100%, 37%);
+  --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
 
   /* Color Neutral */
@@ -32,6 +32,114 @@
   font-family: "Hanken Grotesk", sans-serif;
 }
 
+.score-card {
+  background: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  color: hsl(241, 100%, 89%, 75%);
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.score-card h2,
+.score-card p {
+  margin-bottom: 10px;
+}
+
+.score-card p {
+  font-size: 0.9rem;
+}
+.score-circle {
+  background: linear-gradient(
+    to bottom,
+    var(--violet-blue),
+    var(--persian-blue)
+  );
+  width: 110px;
+  height: 110px;
+  margin: 15px auto;
+  border-radius: 55px;
+  padding: 15px;
+}
+.score-circle span {
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.summary-card {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.card-title {
+  display: flex;
+  gap: 10px;
+}
+.reaction-card {
+  background-color: hsl(0, 100%, 67%, 8%);
+}
+
+.reaction-left-contents {
+  color: var(--light-red);
+}
+
+.memory-card {
+  background-color: hsl(39, 100%, 56%, 8%);
+}
+.memory-left-contents {
+  color: var(--orangey-yellow);
+}
+
+.verbal-card {
+  background-color: hsl(166, 100%, 37%, 8%);
+}
+.verbal-left-contents {
+  color: var(--green-teal);
+}
+
+.visual-card {
+  background-color: hsl(234, 85%, 45%, 8%);
+}
+.visual-left-contents {
+  color: var(--cobalt-blue);
+}
+
+.marks-in-category {
+  font-weight: 800;
+}
+
+.marks-out-of {
+  opacity: 0.7;
+}
+
+.btn-continue {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  border: none;
+  height: 40px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.btn a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
